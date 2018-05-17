@@ -25,7 +25,7 @@ public class FrontController extends HttpServlet {
 	
 	Map<String, CommandProcess> commandMap = new HashMap<String, CommandProcess>();
 	
-    public FrontController() {
+    public FrontController() { 
         super();
     }
 
