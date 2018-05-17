@@ -1,0 +1,37 @@
+	
+* 코드 또는 jocl 방식의 DBCP 사용
+
+	- commons-dbcp-1.4.jar
+	- commons-pool-1.6.jar
+	- commons-collections4-4.0.jar 
+		-> 자바 버전 1.2에서 DBCP 사용시 commons-pool 라이브러리에서 
+			collections 라이브러리에 의존하고 있어서 필요하며
+			그 이상의 버전에서는 필요치 않다.
+
+	- 최신 버전인 commons-pool2-2.2.jar 파일은 GenericObjectPool() 생성자의
+	  매개변수와 일부 클래스명이 변경되어 새로운 클래스에 대한 지식이 필요함
+	
+
+* JNDI 방식의 DBCP 사용
+
+	- commons-dbcp-1.4.jar
+	- commons-pool-1.6.jar
+	- commons-collections4-4.0.jar -> 추가 기능 사용시 필요(컬렉션 객체 확장시)
+		-> 자바 버전 1.2에서 DBCP 사용시 commons-pool 라이브러리에서 
+			collections 라이브러리에 의존하고 있어서 필요하며
+			그 이상의 버전에서는 필요치 않다.
+			
+	- context.xml에 factory 설정은 아래와 같이 한다. 
+	  factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+
+
+	- commons-dbcp2-2.0.jar
+	- commons-pool2-2.2.jar
+	- commons-loggin-1.2.jar
+		-> org.apache.commons.dbcp2.BasicDataSource
+			클래스에서 이 라이브러리에 의존하고 있기 때문에 필요하다.
+			
+	- context.xml에 factory 설정은 아래와 같이 한다. 
+	  factory="org.apache.commons.dbcp2.BasicDataSourceFactory"
+	  
+	  

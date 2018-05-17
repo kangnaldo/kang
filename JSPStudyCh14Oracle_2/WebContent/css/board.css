@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+body {
+	margin-top: 50px;
+	font-size: 12px;
+	color: black; 
+	line-height: 160%;	
+}
+table {
+	margin: 0 auto;
+	padding: 5px 5px;
+	border-collapse: collapse;	
+	line-height: 160%;
+}
+.readTable { width: 500px; }
+.listTable { width: 800px; }
+.contentTable { width: 600px; }
+.boardTitle{
+	height: 60px;
+	line-height: 60px;	
+	text-align: center;
+	border-bottom: 1px dotted #787878;
+}
+.tdSpan {
+	height: 40px;
+	line-height: 40px;
+	text-align: center; 
+}
+.readTh {
+	width: 70px;	
+	padding-right: 10px;
+	background: #EEEEEE;
+	text-align: right;	
+}
+.readTd {
+	width: 330px;
+}
+.listWrite { 
+	text-align: right; 
+	padding-right: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #787878; 
+}
+.listThNo { 
+	width: 50px; 
+	height: 30px;
+	text-align: center; 
+	border: 1px solid #787878; 
+	background: #EAEAEA; 
+}
+.listThTitle { 
+	width: 230px; 
+	text-align: center;  
+	border: 1px solid #787878;  
+	background: #EAEAEA; 
+}
+.listThWriter { 
+	width: 100px; 
+	text-align: center;  
+	border: 1px solid #787878; 
+	background: #EAEAEA; 
+}
+.listThEmail {
+	width: 200px;
+	text-align: center;
+	border: 1px solid #787878;
+	background: #EAEAEA;
+}
+.listThDate { 
+	width: 120px; 
+	text-align: center;  
+	border: 1px solid #787878;  
+	background: #EAEAEA; 
+}
+.listTdSpan { 
+	height: 30px; 
+	text-align: 
+	center; font-size: 12px; 
+}
+.listTdNo { 
+	height: 30px; 
+	text-align: center; 
+	border: 1px dotted #787878; 
+}
+.listTdTitle {	
+	padding-left: 10px;	  
+	border: 1px dotted #787878; 
+}
+.listTdWriter {
+	text-align: center;		  
+	border: 1px dotted #787878; 
+}
+.listTdEmail {
+	text-align: center;		  
+	border: 1px dotted #787878; 
+}
+.listTdDate {
+	text-align: center;	  
+	border: 1px dotted #787878; 
+}
+.listPage { 
+	height: 30px;
+	text-align: center;	 
+}
+.contentTh { 
+	height: 30px;
+	width: 70px; 
+	text-align: center;
+	border: 1px dotted #787878;
+}
+.contentTd1 {
+	width: 230px;
+	text-align: center;
+	border: 1px dotted #787878;
+}
+table .listTr:hover {
+	background-color: #FFEAEA;
+}
+.contentTitle, .readContent { border: 1px dotted #787878; }
+textarea { border: 1px solid #999999; font-size: 12px; }
+input {	height: 20px; 	border: 1px solid #999999; }
+a:link { text-decoration: none; color: #575757; }
+a:hover { text-decoration: yes; color: #993333; }
+a:visited { text-decoration: none; color: #575757; }
