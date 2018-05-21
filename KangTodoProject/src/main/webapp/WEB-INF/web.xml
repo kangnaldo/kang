@@ -24,8 +24,16 @@
 	</filter-mapping>
 
 	<servlet>
-		<servlet-name>FrontController</servlet-name>
-		<servlet-class></servlet-class>
+		<servlet-name>Controller</servlet-name>
+		<servlet-class>com.kang.controller.Controller</servlet-class>
+		<init-param>
+			<param-name>commandURI</param-name>
+			<param-value>/WEB-INF/commandURI.properties</param-value>
+		</init-param>
 	</servlet>
-
+	<!-- .do로 들어오는것은 모두 컨트롤러를 거치게 된다. -->
+	<servlet-mapping>
+		<servlet-name>Controller</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
 </web-app>
