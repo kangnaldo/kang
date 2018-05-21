@@ -60,7 +60,6 @@ public class FrontController extends HttpServlet {
 		while (iter.hasNext()) {
 			String command = (String) iter.next();
 			String className = prop.getProperty(command);
-
 			try {
 				Class<?> commandClass = Class.forName(className);
 				CommandProcess service = (CommandProcess) commandClass.newInstance();
