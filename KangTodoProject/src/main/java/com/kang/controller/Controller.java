@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -109,6 +110,16 @@ public class Controller extends HttpServlet {
 			forward = service.getRequestService(request, response);
 		} else {
 			response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+		}
+		
+		if (forward != null) {
+			if (forward.isRedirect()) {// 리다이렉트 처리
+				response.sendRedirect(forward.getPath());
+			} else { // 포워드 처리
+				RequestDispatcher rd = request.getRequestDispatcher(forward.getPath());
+				rd.forward(request, response);
+
+			}
 		}
 		
 	}
