@@ -4,9 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <title></title>
+ <jsp:include page="/WEB-INF/module/nav.jsp" flush="false"></jsp:include>
 </head>
 <body>
-	로그인
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3"><h1>아이디</h1></div>
+			<div class="col-lg-9"><h2>123</h2></div>
+		</div>
+	</div>
 </body>
 </html>

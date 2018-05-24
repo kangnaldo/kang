@@ -39,7 +39,7 @@
 			<param-value>/WEB-INF/commandURI.properties</param-value>
 		</init-param>
 	</servlet>
-	<!-- .do로 들어오는것은 모두 컨트롤러를 거치게 된다. -->
+	<!-- .do로 들어오는 모든 컨트롤러를 거치게 된다. -->
 	<servlet-mapping>
 		<servlet-name>Controller</servlet-name>
 		<url-pattern>*.do</url-pattern>
