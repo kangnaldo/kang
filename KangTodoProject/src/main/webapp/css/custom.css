@@ -1,0 +1,12 @@
+@charset "EUC-KR";
+#mainct1 {
+	margin:0 auto;
+	color:red;
+	border:1px solid black;
+}
+.hoho2{
+	width:80%;
+	margin:0 auto;
+	padding-top: 15em;
+
+}
