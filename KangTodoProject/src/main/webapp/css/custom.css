@@ -1,12 +1,13 @@
 @charset "EUC-KR";
-#mainct1 {
-	margin:0 auto;
-	color:red;
-	border:1px solid black;
-}
-.hoho2{
-	width:80%;
-	margin:0 auto;
-	padding-top: 15em;
+.logposition{
 
+	border: 1px solid #d2ab0f;
+	border-radius:20px;
+	width:50%;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+.form-group{
+	margin-top: 10px;
+	overflow:hidden;
 }

@@ -11,8 +11,10 @@ public class IndexService  implements CommandProcess{
 	@Override
 	public ForwardService getRequestService(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		return null;
+		ForwardService forward = new ForwardService();
+		forward.setRedirect(false);
+		forward.setPath("/index.jsp");
+		return forward;
 	}
 
 }

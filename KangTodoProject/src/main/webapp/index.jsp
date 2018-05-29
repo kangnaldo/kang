@@ -12,6 +12,6 @@
 <jsp:include page="/WEB-INF/module/nav.jsp"></jsp:include>
 </head>
 <body>
-
+인덱스
 </body>
 </html>

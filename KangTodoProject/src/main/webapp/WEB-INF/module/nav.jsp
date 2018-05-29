@@ -17,7 +17,7 @@
 	<nav id="aa"class="navbar navbar-default">
 		<div class="collapse navbar-collapse">
 			<ul class="nav nav-pills navbar-right">
-				<li role="presentation"><a href="#">홈</a></li>
+				<li role="presentation"><a href="/index.do">홈</a></li>
 				<li role="presentation"><a href="/register.do">회원가입</a></li>
 				<li role="presentation"><a href="/login.do">로그인</a></li>
 			</ul>
