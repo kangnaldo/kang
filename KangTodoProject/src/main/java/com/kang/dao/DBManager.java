@@ -25,13 +25,15 @@ public class DBManager {//DB Connection 을 관리하는 클래스입니당.
 			
 			//"jdbc/bbsDBPool" 이라는 이름을 가진 DBCP에서 DataSource 객체를 얻음
 			//context.xml 파일에서 지정한 수의 커넥션을 생성해 커넥션 풀에 저장함.
-			DS = (DataSource) envContext.lookup("jdbc/bbsDBPool");
+			System.out.println(DS);
+			DS = (DataSource) envContext.lookup("jdbc/todoDBPool");
+			System.out.println("커넥션확인"+DS.getConnection());
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
-	//DBMS의 접속하고 활성화된 Connection 객체를 리턴 하는 메소드
+	//DBMS의 접속하고 활성화된 Connection 객체를 리턴 하는 메소드임니당 싱글톤패턴
 	public static Connection getConnection() {
 		try {
 			// DataSource 객체를 이용해 커넥션을 대여함.

@@ -1,5 +1,7 @@
 package com.kang.dao;
 
-public interface TodoDao {
+import com.kang.bean.User;
 
+public interface TodoDao {
+	public boolean userInsert(User user);
 }

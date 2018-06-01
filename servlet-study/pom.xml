@@ -72,7 +72,7 @@
 						<path>/</path>
 						<contextReloadable>true</contextReloadable>
 					</configuration>
-					<dependencies>
+				<dependencies>
 						<dependency>
 						    <groupId>mysql</groupId>
 						    <artifactId>mysql-connector-java</artifactId>
